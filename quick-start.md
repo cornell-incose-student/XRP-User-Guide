@@ -22,9 +22,10 @@ The XRP is comprised of the following main components:
 
 1.  Ensure 4 AA batteries are installed and the power switch (on the controller board) is **ON**.
 
-::: {style="display: flex; gap: 1em;"}
-<img src="images/image3.jpg" alt="XRP robot with battery compartment showing 4 AA batteries installed" style="width: 50%; height: auto;"/> <img src="images/image37.png" alt="Close-up of the controller board with the power switch highlighted" style="width: 50%; height: auto;"/>
-:::
+<table><tr>
+<td width="50%"><img src="images/image3.jpg" alt="XRP robot with battery compartment showing 4 AA batteries installed" width="100%"/></td>
+<td width="50%"><img src="images/image37.png" alt="Close-up of the controller board with the power switch highlighted" width="100%"/></td>
+</tr></table>
 
 2.  Connect the XRP to your computer with a USB-C cable.
 
