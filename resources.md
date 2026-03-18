@@ -6,16 +6,16 @@
 - [XRP Users Guide (Full Documentation)](https://xrpusersguide.readthedocs.io/en/latest/)
 - [SparkFun XRP Page](https://www.sparkfun.com/products/22230)
 - [SparkFun XRP Controller Hardware Overview](https://docs.sparkfun.com/SparkFun_XRP_Controller/)
-- [Experiential Robotics (Get Started)](https://www.experiential.inc/get-started)
-- [XRP Community Forum (Discourse)](https://xrpforum.wpi.edu/)
+- [Experiential Robotics (Get Started)](https://www.experiential.bot/myxrp-getstarted)
+- [XRP Community Forum (Discourse)](https://xrp.discourse.group/)
 
 ---
 
 ## Video Tutorials
 
-- [XRP Assembly and Software Starter Guide](https://www.youtube.com/watch?v=...) — Start at ~1:15 for hardware assembly
-- [XRP Movement Guide](https://www.youtube.com/watch?v=...) — Programming basics of robot movement
-- [XRP Delivery Challenge (Servo and Sensors)](https://www.youtube.com/watch?v=...) — Combining sensors, servos, and movement
+- [XRP Assembly and Software Starter Guide](https://www.youtube.com/watch?v=JQyKhzlMSms) — Start at ~1:15 for hardware assembly
+- [XRP Movement Guide](https://www.youtube.com/watch?v=jHKAQSRTRaM) — Programming basics of robot movement
+- [XRP Delivery Challenge (Servo and Sensors)](https://www.youtube.com/watch?v=DH_uv6ndZF0) — Combining sensors, servos, and movement
 
 > <span style="color: red;">**REVIEW NOTE:**</span> Add any additional tutorial videos here. Check for newer videos on the XRP YouTube channel.
 
