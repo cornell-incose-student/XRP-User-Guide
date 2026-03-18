@@ -20,8 +20,8 @@ The XRP is programmed using the web-based **XRP Code Editor**. Use **Google Chro
 
 ### Key Programming Videos
 
--   [**XRP Movement Guide Using The XRP Code Editor**](https://www.youtube.com/watch?v=...) — Programming basics of robot movement
--   [**XRP Delivery Challenge Guide Using Servo and Sensors**](https://www.youtube.com/watch?v=...) — Combining sensors, servos, and movement
+-   [**XRP Movement Guide Using The XRP Code Editor**](https://www.youtube.com/watch?v=jHKAQSRTRaM) — Programming basics of robot movement
+-   [**XRP Delivery Challenge Guide Using Servo and Sensors**](https://www.youtube.com/watch?v=DH_uv6ndZF0) — Combining sensors, servos, and movement
 
 ------------------------------------------------------------------------
 
