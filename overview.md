@@ -30,8 +30,6 @@ The XRP comes with two drive motors with integrated wheel encoders, and an IMU s
 -   [WPILib FRC Guide](https://docs.wpilib.org/en/stable/)
 -   [XRP Board Guide](https://docs.sparkfun.com/SparkFun_XRP_Controller/)
 
-> <span style="color: red;">**REVIEW NOTE:**</span> Review all links for accuracy. The readthedocs guide may reference the older grey/beta robot in places.
-
 ------------------------------------------------------------------------
 
 ## Kit Components
