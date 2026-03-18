@@ -56,8 +56,6 @@ Your XRP kit includes:
 
 Watch the [XRP Assembly and Software Starter Guide](https://www.youtube.com/watch?v=JQyKhzlMSms) video for the standard chassis build. Start at \~1:15 for the "Hardware Assembly" section.
 
-> <span style="color: red;">**REVIEW NOTE:**</span> Add or link to Lego-compatible assembly instructions specific to this kit version. Check if there are updated assembly photos for the red robot.
-
 **Tip:** Watch the full video first, then go back and assemble along with it. The segments are short and you'll feel more comfortable knowing what comes next.
 
 ------------------------------------------------------------------------
