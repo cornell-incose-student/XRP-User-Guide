@@ -45,10 +45,9 @@ Plug into the port labeled **"Line"** on the controller board.
 ---
 
 ## Color Sensor (TCS-34725)
-
+<img src="images/image4.png" alt="PCB layout diagrams of the color sensor board" width="100%"/>
 <table><tr>
 <td width="33%"><img src="images/image17.jpg" alt="Front face of the TCS-34725 color sensor" width="100%"/></td>
-<td width="33%"><img src="images/image4.png" alt="PCB layout diagrams of the color sensor board" width="100%"/></td>
 <td width="34%"><img src="images/image24.png" alt="Color sensor connected with wires running to the XRP board" width="100%"/></td>
 </tr></table>
 
