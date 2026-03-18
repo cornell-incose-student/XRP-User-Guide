@@ -70,4 +70,4 @@ You may see references to two different XRP versions online: the **older grey/be
 
 Many online tutorials and the XRP Users Guide may show the grey robot. The core programming concepts are the same, but board labels and some pin configurations may differ.
 
-> <span style="color: red;">**REVIEW NOTE:**</span> Manually verify the exact hardware differences between the grey beta and red release version. Confirm RP2350B vs RP2040 for the specific kits being used.
+------------------------------------------------------------------------
