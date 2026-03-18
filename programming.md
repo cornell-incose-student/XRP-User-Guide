@@ -93,7 +93,7 @@ No small robot drives perfectly straight. The IMU's gyroscope experiences **yaw 
 Your Lego-compatible XRP has the controller board mounted **upright (vertical)**, while many tutorials show it flat (horizontal). This affects IMU-based Drivetrain commands:
 
 -   The default Drivetrain commands may not work correctly with the upright orientation.
--   A prototype XRP library with an updated drivetrain file is available on Canvas as: **`XRBLib_Drivetrain.zip`**. It contains the full XRPLib folder but only the drivetrain file has been modified.
+-   A prototype XRP library with an updated drivetrain file is available [here](code) as **`XRPLib.zip`**. It contains the full XRPLib folder but only the drivetrain file has been modified.
 -   Alternatively, use individual **`EncoderMotor`** commands to control your robot directly. This approach works regardless of board orientation and was used successfully for years of competition.
 
 ------------------------------------------------------------------------
