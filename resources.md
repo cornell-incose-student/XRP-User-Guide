@@ -33,6 +33,6 @@
 
 - **`example_run.py`** — Available on Canvas (comprehensive sample covering all kit features)
 - **`XRBLib_Drivetrain.zip`** — Available on Canvas (prototype drivetrain library for upright board orientation)
-- [TCS-34725 Color Sensor Library (tcs3472-micropython)](https://github.com/your-link-here)
+- [TCS-34725 Color Sensor Library (tcs3472-micropython)](https://github.com/tti0/tcs3472-micropython/blob/main/tcs3472.py)
 - [MicroPython Time Documentation](https://docs.micropython.org/en/latest/library/time.html)
 - [Thonny IDE](https://thonny.org/) (alternative to XRP Code Editor; required for factory reset)
