@@ -2,11 +2,18 @@
 
 The controller board has 4 pin connectors labeled **Line**, **Qwiic 1**, **Qwiic 0**, and **Dist**.
 
+![Board diagram showing the Line Sensor, Expansion, and Distance Sensor port locations](images/image10.png)
+
 ---
 
 ## Ultrasonic Distance Sensor
 
 Plug into the port labeled **"Dist"** on the controller board.
+
+<table><tr>
+<td width="50%"><img src="images/image8.png" alt="Video reference showing ultrasonic sensor with color-coded wires" width="100%"/></td>
+<td width="50%"><img src="images/image14.jpg" alt="Close-up of the Dist port on the red board with wires plugged in" width="100%"/></td>
+</tr></table>
 
 Wire orientation matters — the connector maps the sensor's echo and trigger lines to the board:
 
@@ -27,12 +34,23 @@ The connector should click into place. Do not force it.
 
 Plug into the port labeled **"Line"** on the controller board.
 
+<table><tr>
+<td width="50%"><img src="images/image8.png" alt="Video reference showing IR line sensor wiring" width="100%"/></td>
+<td width="50%"><img src="images/image5.jpg" alt="Close-up of the Line port on the red board with wires plugged in" width="100%"/></td>
+</tr></table>
+
 - Make sure the sensor faces **downward** toward the driving surface.
 - Returns values from low (white/reflective surface) to high (black/dark surface).
 
 ---
 
 ## Color Sensor (TCS-34725)
+
+<table><tr>
+<td width="33%"><img src="images/image17.jpg" alt="Front face of the TCS-34725 color sensor" width="100%"/></td>
+<td width="33%"><img src="images/image4.png" alt="PCB layout diagrams of the color sensor board" width="100%"/></td>
+<td width="34%"><img src="images/image24.png" alt="Color sensor connected with wires running to the XRP board" width="100%"/></td>
+</tr></table>
 
 ### Setup
 
@@ -78,6 +96,11 @@ The `tcs.rgb()` function returns a tuple of three values `(Red, Green, Blue)`. U
 
 ## Touch Sensor / Digital Button
 
+<table><tr>
+<td width="50%"><img src="images/image9.jpg" alt="The touch sensor — a large red button on a black PCB" width="100%"/></td>
+<td width="50%"><img src="images/image19.jpg" alt="Touch sensor connected to the Servo 2 port on the board" width="100%"/></td>
+</tr></table>
+
 Connect to any Servo extension pin. Recommended: **Servo 2 (Pin 9)**:
 
 | Wire Color | Board Pin |
@@ -93,6 +116,11 @@ See [Skill 6 in Programming](programming.md#skill-6-using-the-touch-sensor-digit
 ---
 
 ## Servo Motor
+
+<table><tr>
+<td width="50%"><img src="images/image23.jpg" alt="The servo motor — small black motor with white hub" width="100%"/></td>
+<td width="50%"><img src="images/image15.jpg" alt="Servo motor connected to the Servo 1 port on the board" width="100%"/></td>
+</tr></table>
 
 The servo should already be connected. It plugs into the **Servo 1** port by default.
 
