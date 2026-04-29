@@ -66,12 +66,12 @@ Reference: [XRPLib Quick Reference — drivetrain](xrplib-reference.md#drivetrai
 ``` python
 from XRPLib.defaults import *
 
-drivetrain.straight(30)          # forward 30 cm at default speed
-drivetrain.straight(30, 0.75)    # forward 30 cm at 75% speed
-drivetrain.straight(-20)         # backward 20 cm
+drivetrain.straight(10)          # forward 10 cm at default speed
+drivetrain.straight(10, 0.75)    # forward 10 cm at 75% speed
+drivetrain.straight(-10)         # backward 10 cm
 
-drivetrain.turn(90)              # turn clockwise 90°
-drivetrain.turn(-45)             # turn counterclockwise 45°
+drivetrain.turn(90)              # turn clockwise 90 deg
+drivetrain.turn(-45)             # turn counterclockwise 45 deg
 ```
 
 Add a `timeout` so the robot doesn't get stuck if it can't complete a movement (e.g., if it's blocked):
@@ -154,11 +154,11 @@ Move the servo to a position and it holds there. The range is 0–200°, but the
 from XRPLib.defaults import *
 import time
 
-servo_one.set_angle(0)     # move to 0°
+servo_one.set_angle(0)     # move to 0 deg
 time.sleep(1)
-servo_one.set_angle(90)    # move to 90°
+servo_one.set_angle(90)    # move to 90 deg
 time.sleep(1)
-servo_one.set_angle(180)   # move to 180°
+servo_one.set_angle(180)   # move to 180 deg
 ```
 
 Moving the servo to a known angle at startup is a useful visual indicator that your program is running:
