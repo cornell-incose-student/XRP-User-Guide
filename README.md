@@ -17,8 +17,8 @@ Welcome to the Systems Engineering MEng Program! This guide, developed by the IN
 
 **Appendix**
 
-A.  [Python Basics](python-basics.md)
-B.  [XRPLib Quick Reference](xrplib-reference.md)
+-   [Python Basics](python-basics.md)
+-   [XRPLib Quick Reference](xrplib-reference.md)
 
 ------------------------------------------------------------------------
 
