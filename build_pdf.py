@@ -42,6 +42,11 @@ FILES = [
     "resources.md",
 ]
 
+APPENDIX_FILES = [
+    "python-basics.md",
+    "xrplib-reference.md",
+]
+
 MD_EXTENSIONS = [
     "extra",          # tables, fenced_code, inline HTML, attr_list, etc.
     "toc",
@@ -51,7 +56,7 @@ MD_EXTENSIONS = [
 CSS = """
 @page {
     size: A4;
-    margin: 2cm 2.5cm;
+    margin: 0.5in;
     @bottom-center {
         content: counter(page);
         font-size: 10pt;
@@ -149,22 +154,26 @@ hr {
 def build_pdf():
     print("Building XRP-Guide.pdf...")
 
+    def convert_files(filenames, sections, page_break_first=True):
+        for i, filename in enumerate(filenames):
+            path = BASE_DIR / filename
+            if not path.exists():
+                print(f"  WARNING: {filename} not found, skipping.")
+                continue
+            content = path.read_text()
+            prefix = '<div class="page-break"></div>\n\n' if (i > 0 or page_break_first) else ""
+            md = markdown.Markdown(extensions=MD_EXTENSIONS)
+            sections.append(prefix + md.convert(content))
+            print(f"  Converted {filename}")
+
     sections = []
-    for i, filename in enumerate(FILES):
-        path = BASE_DIR / filename
-        if not path.exists():
-            print(f"  WARNING: {filename} not found, skipping.")
-            continue
+    convert_files(FILES, sections, page_break_first=False)
 
-        content = path.read_text()
+    # Appendix divider
+    sections.append('<div class="page-break"></div>\n\n<h1>Appendix</h1>')
+    print("  Added Appendix divider")
 
-        # Add a page break before each section except the first
-        prefix = '<div class="page-break"></div>\n\n' if i > 0 else ""
-
-        md = markdown.Markdown(extensions=MD_EXTENSIONS)
-        html_body = md.convert(content)
-        sections.append(prefix + html_body)
-        print(f"  Converted {filename}")
+    convert_files(APPENDIX_FILES, sections, page_break_first=True)
 
     full_html = f"""<!DOCTYPE html>
 <html lang="en">

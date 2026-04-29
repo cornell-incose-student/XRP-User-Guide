@@ -48,8 +48,7 @@
 > **Warning:** This erases everything on the XRP. Save a local copy of your code first!
 
 1. **Enter storage mode:** Connect XRP via USB. Hold the **BOOT** button (blue), then press **RESET** (green), then release BOOT. A file explorer window should appear.
-2. **Flash nuke:** Download `universal_flash_nuke.uf2` and copy it into the XRP storage device. It will auto-restart.
-3. **Reinstall MicroPython:** Download [Thonny](https://thonny.org/). With the XRP connected, select **"Install MicroPython"** (bottom-right corner). Choose **RP2 — Raspberry Pi Pico 2**.
-4. **Reconnect:** Go back to the XRP Code Editor and follow prompts to update firmware and libraries.
-
-> <span style="color: red;">**REVIEW NOTE:**</span> Verify: Is the MicroPython version still "RP2 — Raspberry Pi Pico 2 — V1.25.0" or has it been updated? Check for red board vs beta board differences in this process.
+2. **Flash nuke:** Download `universal_flash_nuke.uf2` from [this repo](https://github.com/Gadgetoid/pico-universal-flash-nuke/releases/tag/v1.0.1) and copy it into the XRP storage device. It will auto-restart.
+3. **Re-enter storage mode:** Hold **BOOT**, press **RESET**, release BOOT again.
+4. **Reinstall MicroPython:** Download the MicroPython `.uf2` for **RP2 — Raspberry Pi Pico 2 — V1.25.0** from [micropython.org](https://micropython.org/download/RPI_PICO2/) and copy it into the XRP storage device. It will auto-restart.
+5. **Reconnect:** Go back to the XRP Code Editor and follow prompts to update firmware and libraries.

@@ -15,6 +15,11 @@ Welcome to the Systems Engineering MEng Program! This guide, developed by the IN
 5.  [Troubleshooting & FAQ](troubleshooting.md)
 6.  [Resource Links](resources.md)
 
+**Appendix**
+
+A.  [Python Basics](python-basics.md)
+B.  [XRPLib Quick Reference](xrplib-reference.md)
+
 ------------------------------------------------------------------------
 
 *This guide was developed in part by the 2025–26 INCOSE Student Group: Louise, Janhavi, Anurag, Anggasta, and Wes Hewett.*
