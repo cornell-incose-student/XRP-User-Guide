@@ -250,13 +250,17 @@ else:
 
 ``` python
 from XRPLib.defaults import *
+import time
 
 while True:
     if rangefinder.distance() < 20:   # stop if something within 20 cm
-        drivetrain.stop()
+        drivetrain.arcade(0, 0)
     else:
         drivetrain.arcade(0.4, 0)     # drive forward
+    time.sleep(0.05)
 ```
+
+> **Tip:** Always include a short `time.sleep()` in sensor-driven loops. Without one, the loop runs thousands of times per second — faster than the sensor can produce stable readings — which causes jittery or unexpected behavior. A 50ms sleep (20 Hz) is a good default for most reactive control loops.
 
 ------------------------------------------------------------------------
 
@@ -266,7 +270,9 @@ It's a simple button, but sometimes that's all you need! See [Sensor Wiring](sen
 
 > **Note:** The code below uses the low-level `machine.Pin` interface because the touch sensor is an external button wired to a servo port — it's not part of XRPLib. The **onboard button** on the XRP board itself is handled by XRPLib: see [XRPLib Quick Reference — board](xrplib-reference.md#board--onboard-led-and-button) for `board.is_button_pressed()` and `board.wait_for_button()`.
 
-### Basic Code
+### Step 1: Test Your Wiring
+
+Run this first to confirm the button is connected correctly. Open the console and press the button — you should see "Pressed" appear.
 
 ``` python
 from machine import Pin
@@ -282,17 +288,28 @@ while True:
     time.sleep(0.1)
 ```
 
-In this code: `9` = pin number (Servo 2), `Pin.IN` = input mode, `Pin.PULL_DOWN` = interprets press as 1, release as 0.
+`9` = pin number (Servo 2), `Pin.IN` = input mode, `Pin.PULL_DOWN` = interprets press as 1, release as 0.
 
-### Button Debouncing
+### Step 2: Detect Single Presses (Debouncing)
 
-The `time.sleep(0.1)` prevents reading the same press multiple times (buttons physically "bounce"). For more precise timing, use MicroPython's tick functions:
+Physical buttons "bounce" — when pressed, the contacts make and break contact several times in a few milliseconds before settling. Without debouncing, a single press can register as many presses. This version only fires when the button transitions from unpressed to pressed, and the 50ms sleep covers the bounce window:
 
 ``` python
-start = time.ticks_us()
-if time.ticks_diff(time.ticks_us(), start) > 500:
-    print("Enough time has passed")
+from machine import Pin
+import time
+
+digital_button = Pin(9, Pin.IN, Pin.PULL_DOWN)
+last_value = 0
+
+while True:
+    value = digital_button.value()
+    if value == 1 and last_value == 0:  # just pressed
+        print("Button pressed!")
+    last_value = value
+    time.sleep(0.05)
 ```
+
+Each physical press prints `"Button pressed!"` exactly once, even if you hold the button down.
 
 Reference: [MicroPython time documentation](https://docs.micropython.org/en/latest/library/time.html)
 
