@@ -37,7 +37,7 @@ This connects the sensor's two signal lines, Left and Right, to the RP2350's GPI
 Plug into the port labeled **"Line"** on the controller board.
 
 <table><tr>
-<td width="50%"><img src="images/image8.png" height="250" width="300" alt="Video reference showing IR line sensor wiring" width="100%"/></td>
+<td width="50%"><img src="images/image8a.png" height="250" width="300" alt="Video reference showing IR line sensor wiring" width="100%"/></td>
 <td width="50%"><img src="images/image5.jpg" height="250" width="300" alt="Close-up of the Line port on the red board with wires plugged in" width="100%"/></td>
 </tr></table>
 Wire orientation matters :  Ensure the following orientation while connecting the sensor:

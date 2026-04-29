@@ -114,7 +114,7 @@ import time
 
 left_motor.set_effort(0.5)    # left wheel forward at 50%
 right_motor.set_effort(0.5)   # right wheel forward at 50%
-time.sleep(2)                 # run for 2 seconds
+time.sleep(1)                 # run for 2 seconds
 left_motor.set_effort(0)
 right_motor.set_effort(0)
 ```
